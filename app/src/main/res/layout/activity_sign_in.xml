@@ -34,20 +34,18 @@
             app:layout_constraintStart_toEndOf="@+id/textView" />
 
 
-
-
     <EditText
         android:id="@+id/password"
-        android:textColor="#ffffff"
-        android:textColorHint="#ffffff"
-        android:hint="Enter your password"
         android:layout_width="217dp"
         android:layout_height="43dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="40dp"
+        android:hint="Enter your password"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.619" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
