@@ -46,7 +46,13 @@ public class HomeScreen extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new frag_home(), "homeTag").commit();
                         break;
                     case R.id.profile:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new frag_profile(), "profileTag").commit();
+                        break;
                     case R.id.wishlist:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new frag_wishlist(), "wishTag").commit();
+                        break;
                     case R.id.analytics:
                     case R.id.logout:
 
