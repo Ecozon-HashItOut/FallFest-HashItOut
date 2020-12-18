@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "182647630383",
+    "project_id": "eozen-274aa",
+    "storage_bucket": "eozen-274aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182647630383:android:21a8548aa10d96c284f4da",
+        "android_client_info": {
+          "package_name": "com.android.ecozen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182647630383-1d0e485uitg0fqkm39glsulb4ijvpqtt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9wwNkWHL6pQ5r48-FbQfGsngdWQFelXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182647630383-1d0e485uitg0fqkm39glsulb4ijvpqtt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182647630383:android:d8fb1a74b63b705d84f4da",
+        "android_client_info": {
+          "package_name": "com.example.fall_fest_ecozen_"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182647630383-3sibdtvlidg5dpamrdm0j5eqofncot15.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fall_fest_ecozen_",
+            "certificate_hash": "122e1f2b0db4bf2adb19304fa9923683a799bd73"
+          }
+        },
+        {
+          "client_id": "182647630383-1d0e485uitg0fqkm39glsulb4ijvpqtt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9wwNkWHL6pQ5r48-FbQfGsngdWQFelXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182647630383-1d0e485uitg0fqkm39glsulb4ijvpqtt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
