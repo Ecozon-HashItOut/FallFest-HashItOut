@@ -21,6 +21,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.mukesh.OnOtpCompletionListener;
 import com.mukesh.OtpView;
 
@@ -39,6 +41,7 @@ public class otp_screen extends AppCompatActivity  {
 
     //firebase auth object
     private FirebaseAuth mAuth;
+    //private DatabaseReference UsersRef;
 
 
     @Override
@@ -140,6 +143,7 @@ public class otp_screen extends AppCompatActivity  {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             //verification successful we will start the profile activity
+
                             Intent intent = new Intent(otp_screen.this, MainActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
