@@ -29,16 +29,16 @@ public class frag_wishlist extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         ArrayList<ItemList> lists=new ArrayList<>();
-        lists.add(new ItemList("Item 1"));
-        lists.add(new ItemList("Item 2"));
-        lists.add(new ItemList("Item 3"));
-        lists.add(new ItemList("Item 4"));
-        lists.add(new ItemList("Item 5"));
-        lists.add(new ItemList("Item 6"));
-        lists.add(new ItemList("Item 7"));
-        lists.add(new ItemList("Item 8"));
-        lists.add(new ItemList("Item 9"));
-        lists.add(new ItemList("Item 10"));
+        lists.add(new ItemList("Item 1",100));
+        lists.add(new ItemList("Item 2",35));
+        lists.add(new ItemList("Item 3",54));
+        lists.add(new ItemList("Item 4",110));
+        lists.add(new ItemList("Item 5",90));
+        lists.add(new ItemList("Item 6",20));
+        lists.add(new ItemList("Item 7",10));
+        lists.add(new ItemList("Item 8",30));
+        lists.add(new ItemList("Item 9",150));
+        lists.add(new ItemList("Item 10",160));
 
         recyclerView=view.findViewById(R.id.recycler);
         recyclerView.setHasFixedSize(true);

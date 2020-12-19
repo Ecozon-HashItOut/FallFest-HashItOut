@@ -27,6 +27,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.holder1> {
     public void onBindViewHolder(@NonNull final holder1 holder, int position) {
         ItemList list1=list.get(position);
         holder.text.setText(list1.getName());
+        holder.text1.setText(String.valueOf(list1.getIndex()));
     }
 
     @Override
@@ -35,11 +36,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.holder1> {
     }
 
     public class holder1 extends RecyclerView.ViewHolder {
-        TextView text;
+        TextView text,text1;
         public holder1(@NonNull View itemView) {
             super(itemView);
 
             text=itemView.findViewById(R.id.number1);
+            text1=itemView.findViewById(R.id.index);
         }
     }
 }
