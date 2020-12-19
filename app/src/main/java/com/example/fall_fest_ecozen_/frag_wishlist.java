@@ -28,7 +28,7 @@ public class frag_wishlist extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ArrayList<ItemList> lists=new ArrayList<>();
+        final ArrayList<ItemList> lists=new ArrayList<>();
         lists.add(new ItemList("Item 1",100));
         lists.add(new ItemList("Item 2",35));
         lists.add(new ItemList("Item 3",54));
@@ -43,9 +43,17 @@ public class frag_wishlist extends Fragment {
         recyclerView=view.findViewById(R.id.recycler);
         recyclerView.setHasFixedSize(true);
         layoutManager=new LinearLayoutManager(getContext());
-        adapter=new ItemAdapter(lists);
+        adapter=new ItemAdapter(lists, new ItemAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View v, int position) {
+                lists.remove(position);
+                adapter.notifyDataSetChanged();
+            }
+        });
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+
 
     }
 }
