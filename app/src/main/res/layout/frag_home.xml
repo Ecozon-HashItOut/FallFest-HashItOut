@@ -21,6 +21,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/bill"
+        android:layout_width="129dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="#76ff03"
+        android:text="Bill"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reward" />
+
     <TextView
         android:id="@+id/alllist"
         android:layout_width="wrap_content"
@@ -51,8 +64,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
-        android:layout_width="409dp"
-        android:layout_height="564dp"
+        android:layout_width="match_parent"
+        android:layout_height="528dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
