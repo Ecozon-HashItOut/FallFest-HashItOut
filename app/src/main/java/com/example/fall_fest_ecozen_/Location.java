@@ -7,11 +7,9 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.widget.Button;
 
-import com.google.android.gms.maps.SupportMapFragment;
 
 public class Location extends AppCompatActivity {
     LocationManager locationManager;
-    SupportMapFragment supportMapFragment;
     Button getd;
     String lati,longi;
 

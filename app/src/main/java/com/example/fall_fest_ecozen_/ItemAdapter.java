@@ -65,7 +65,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.holder1> {
             extfab.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    listener.onItemClick(view,getAbsoluteAdapterPosition());
+                    listener.onItemClick(view,getAdapterPosition());
                 }
             });
         }
